@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Bucks Movie Trivia</title>
+    <link rel="stylesheet" href="./styles/index.css"/>
+</head>
+<body>
+    
+<section class="main">
+  <h1 class="main__page-header">Welcome to Mark Bucks Trivia!</h1>
+  <div class="main__container">
+    <div class="main__question-wrapper">        
+      <p class="main__question" ></p>
+    </div>
+    <form id="trivia__form" class="main__form">
+    <div class="main__answers-wrapper">
+      <ul class="main__answers-list">
+      </ul>
+      <button id="submit-button" class="answer__button">Submit</button>
+      <div id="result"></div>
+    </form>
+    <div class="main_markbucks">
+      <div class="main__marbucks-subcontainer">
+        <p class ="main__markbucks-label">Mark Bucks Balance:</p>
+        <p class="main__markbucks-value"></p>
+       </div>
+      <img class ="main__markbucks-img" src="http://i.share.pho.to/376ccdc7_o.jpeg">
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./scripts/trivia-api.js"></script>
+</body>
+</html>
